@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background: #1D4D72;
+    display: grid;
+    grid-template-columns: 200px 600px;
+    color: white;
+    padding: 1em;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+     width: 200px;
+}
+
+header h1 {
+    /* background: #000; */
+    font-weight: 500;
+    font-size: 3.5em;
+}
+
+nav{
+    background-color: black;
+    /* height: 3em; */
+}
+
+nav ul{
+ display: flex;
+ list-style: none;
+ align-items: center;
+ justify-content: space-around;
+ padding: 0;
+ 
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 1em 0em;
+}
+
+nav ul li:hover{
+    background-color: #643219;
+    width: 100%;
+}
+
+main{
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+}
+
+.card-activities{
+    grid-column: 1/3;
+}
+
+.card-info{
+    grid-column: 3/4;
+}
+main h2{
+    /* background-color: antiquewhite; */
+    border-bottom: solid black 2px;
+    padding-bottom: 5px;
+    font-size: 2em;
+    grid-column: 1/4;
+}
+
+.card{
+    margin: 1em 0;
+    border: solid black 1px;
+    border-radius: 25px;
+    overflow: hidden;
+    
+}
+
+.card h3{
+    background-color: #1D4D72;
+    padding: 0.5em;
+    margin: 0;
+    color: white;
+}
+
+.card ul{
+    padding: 0.5em;
+}
+
+footer{
+   background-color: #1D4D72; 
+   color: white;
+   text-align: center;
+}
