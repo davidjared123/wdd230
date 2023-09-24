@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+    background-color: #e9d680;
+}
+
+.logo img{
+    height: 4em;
+}
+
+header .login a{
+    padding: 1em;
+}
+
+header .login a:hover{
+    background: #000;
+    color: white;
+    transition: all 500ms;
+}
+
+header .login a:last-child{
+    padding: 0.8em;
+    border: 2px solid black ;
+}

@@ -1,0 +1,38 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    /* background-color: aquamarine; */
+    justify-content: space-around;
+    margin: 0;
+    padding: 1em 0;
+}
+
+main .hero{
+    background-image: url("/chamber/images/hero-img.jpg");
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .hero a{
+    background: #000;
+    color: white;
+    padding: 1rem;
+}
+
+main .hero a:hover{
+    background-color: #000000a9;
+    transition: ease-out 300ms;
+}

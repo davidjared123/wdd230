@@ -1,6 +1,12 @@
 *{
     margin: 0;
 }
+
+.active{
+    background-color: #643219;
+    width: 100%;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
