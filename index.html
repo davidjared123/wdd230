@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/switch.css">
 
     <meta property="dp:title" content="David Jared Pérez">
     <meta property="dp:description" content="A site plan of David Pérez from wdd230 class on BYU">
@@ -20,14 +21,29 @@
       <h1>David Jared Pérez</h1>
     </header>
      <nav>
-        <ul>
+      <div class="menu-hamburguer" id="menu">
+        
+        <img src="images/menu.png" alt=""></div>
+        <ul class="menu_list">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
             <li><a href="#">Form</a></li>
         </ul>
-    </nav>
-    <main>
+      </nav>
+      <div class="switch-button">
+      <!-- Checkbox -->
+      <input
+        type="checkbox"
+        name="switch-button"
+        id="switch-label"
+        class="switch-button__checkbox"
+        value="light"
+      />
+      <!-- Botón -->
+      <label for="switch-label" class="switch-button__label"></label>
+    </div>
+    <main class="main-grid">
       <h2>WDD 230: Web Frontend Development</h2>
       <section class="card card-activities">
         <h3>Learning Activities</h3>
@@ -54,7 +70,10 @@
             &copy <span id="year"></span> - </span>David Pérez - Venezuela
         </p>
     </footer>
+
   </body>
+  <script src="scripts/dark-mode.js"></script>
   <script src="/scripts/getDates.js"></script>
+  <script src="scripts/menu.js"></script>
 </html>
 

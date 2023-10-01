@@ -3,7 +3,7 @@
 }
 
 .active{
-    background-color: #643219;
+    background-color: #1D4D72;
     width: 100%;
 }
 
@@ -14,7 +14,7 @@ body{
 header{
     background: #1D4D72;
     display: grid;
-    grid-template-columns: 200px 600px;
+    grid-template-columns: 30% 70%;
     color: white;
     padding: 1em;
     justify-items: center;
@@ -37,6 +37,14 @@ nav{
     /* height: 3em; */
 }
 
+body.dark nav{
+    background-color: #173c8a;
+}
+
+.menu-hamburguer img{
+    display: none;
+}
+
 nav ul{
  display: flex;
  list-style: none;
@@ -50,6 +58,14 @@ nav ul a{
     color: white;
     text-decoration: none;
 }
+body.dark{
+    color: white;
+    transition: all 300ms;
+}
+body.dark header{
+    color: white;
+    transition: all 300ms;
+}
 
 nav ul li{
     width: 100%;
@@ -60,22 +76,32 @@ nav ul li{
 }
 
 nav ul li:hover{
-    background-color: #643219;
+    background-color: #173c8a;
     width: 100%;
 }
 
 main{
     padding: 2em;
+    /* background-color: antiquewhite; */
+}
+
+body.dark{
+    background: #000;
+    transition: all 300ms;
+}
+
+.main-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.5em;
 }
 
-.card-activities{
-    grid-column: 1/3;
+main .card-activities{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.card-info{
+main .card-info{
     grid-column: 3/4;
 }
 main h2{
@@ -91,7 +117,13 @@ main h2{
     border: solid black 1px;
     border-radius: 25px;
     overflow: hidden;
+    /* background-color: red; */
     
+}
+
+body.dark .card{
+    background-color: #173c8a;
+    transition: all 300ms;
 }
 
 .card h3{
@@ -101,12 +133,88 @@ main h2{
     color: white;
 }
 
+body.dark .card h3{
+    background-color: #001747;
+    transition: all 300ms;
+}
+
+
+
 .card ul{
     padding: 0.5em;
 }
+
+.card ul a{
+    color: #643219;
+    text-decoration: none;
+}
+
+.card ul a:hover{
+    color: #4e1d05;
+    font-weight: 700;
+    transition: all 300ms;
+}
+
+body.dark .card ul a{
+    color: rgba(255, 255, 255, 0.801);
+}
+
 
 footer{
    background-color: #1D4D72; 
    color: white;
    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+header img{
+     width: 80px;
+}
+
+.menu-hamburguer{
+    display: flex;
+   justify-content: right;
+}
+.menu-hamburguer img{
+    display: block;
+    padding: 0.5em;
+}
+
+nav ul{
+    display: none;
+}
+
+.actived-menu{
+ display: flex;
+ flex-direction: column;
+}
+
+.menu-hamburguer img{
+    width: 25px;
+}
+
+header h1 {
+    /* background: #000; */
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-columns: auto;
+}
+
+main .card-activities{
+    grid-column: 1;
+}
+
+main .card-info{
+    grid-column: 1;
+}
+
+main{
+    padding: 2em;
+    /* background-color: grey; */
+}
 }

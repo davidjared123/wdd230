@@ -1,0 +1,57 @@
+:root {
+    --color-green: #ffff;
+    --color-red: rgb(76, 190, 247);
+    --color-button: #000;
+    --color-black: #000;
+}
+.switch-button {
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+    padding: 1em;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: var(--color-red);
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    display: inline-block;
+    position: relative;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-green);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(1.5rem);
+}
+
+@media screen and (max-width: 1200px) {
+
+
+.switch-button .switch-button__label {
+    background-color: var(--color-red);
+    width: 3rem;
+    height: 1.8rem;
+}
+.switch-button .switch-button__label:before {
+    
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+}
