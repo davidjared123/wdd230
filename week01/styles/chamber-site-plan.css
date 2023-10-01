@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
     --color-primary: #005089;
     --color-secondary: #7EE9EF;
     --color-gray-light: #BFBFBF;
     --color-gray-dark: #415161;
     --color-white: white;
+
 }
 
 *{
     margin: 0;
+    font-family: Montserrat, system-ui, sans-serif;
 }
 
 nav{
@@ -163,4 +167,132 @@ main .main-content input{
 main .main-content input:hover{
     opacity: .8;
     cursor: pointer;
+}
+
+.colors-schema{
+    text-align: center;
+    padding: 2em;
+}
+
+.colors-schema h3{
+    font-size: 1.6em;
+    color: var(--color-gray-dark);
+}
+
+.colors-schema .pic_color{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 1em;
+}
+.colors-schema .pic_color div{
+    border: solid black 1px;
+    border-radius: 50%;
+    height: 8em;
+    width: 8em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors-schema .pic_color .c_primary{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.colors-schema .pic_color .c_secondary{
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.colors-schema .pic_color .c_gray_light{
+    background-color: var(--color-gray-light);
+    color: white;
+}
+
+.colors-schema .pic_color .c_gray_dark{
+    background-color: var(--color-gray-dark);
+    color: white;
+}
+
+.colors-schema a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 300ms;
+    margin: .8em;
+}
+
+.colors-schema a:hover{
+    opacity: 0.7;
+}
+
+.colors_modes{
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.colors_modes img{
+    max-width: 30vw;
+}
+
+.font_section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-gray-dark);
+    padding: 2em;
+}
+.font_section h3{
+    font-size: 1.6em;
+    padding: 0.3em;
+}
+.font_section .description{
+    max-width: 600px;
+}
+
+.showing_font{
+    padding: 1.5em;
+}
+
+.showing_font h4{
+    font-size: 6em;
+}
+
+.showing_font p{
+    font-size: 2em;
+}
+
+.m-bold{
+    font-weight: 700;
+}
+
+.m-medium{
+    font-weight: 500;
+}
+
+.m-light{
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+   background-color: var(--color-primary); 
+   color: white;
+   text-align: center;
+   padding: 1em;
 }
