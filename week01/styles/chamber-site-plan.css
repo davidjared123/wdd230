@@ -1,0 +1,166 @@
+:root{
+    --color-primary: #005089;
+    --color-secondary: #7EE9EF;
+    --color-gray-light: #BFBFBF;
+    --color-gray-dark: #415161;
+    --color-white: white;
+}
+
+*{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 1em;
+}
+nav ul{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+    gap: 0.5em;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    /* margin-right: 0.5em; */
+    
+}
+
+nav ul li:first-child{
+    margin-right: -6px;
+    /* background-color: #005089; */
+}
+
+nav ul .li-login{
+    margin:0  1em;
+    color: white;
+}
+
+nav ul .li-login a{
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: all 300ms;
+}
+
+nav ul .li-login:hover{
+   opacity: 0.5;
+}
+
+ul li img{
+    /* background: #000; */
+    margin: 0;
+    height: 22px;
+        transition: all 300ms;
+}
+
+.icon_linkedin{
+    height: 25px;
+}
+
+
+.icon_gmail{
+    /* background: red; */
+    height: 25px;
+}
+
+ul li img:hover{
+    opacity: 0.5;
+    /* transition: all 300ms; */
+}
+
+.btn-search{
+    background: var(--color-secondary);
+    padding: 0.5em;
+    border: none;
+    color: var(--color-gray-dark);
+    font-weight: 700;
+}
+
+.input-search{
+    height: 29px;
+    border: none;
+}
+
+.btn-search:hover{
+    background:var(--color-secondary);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.chamber_logo{
+    height: 4em;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar{
+    margin-right: 2em;
+    display: flex;
+    gap: 1em;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: var(--color-gray-dark);
+    transition: all 200ms;
+    font-weight: 700;
+}
+.navbar a:hover{
+    color: var(--color-secondary);
+}
+
+main{
+    height: 85vh;
+    max-width: 100vw;
+    background-color: var(--color-gray-dark);
+    background-image: url("/week01/images/hero-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-content{
+    color: white;
+    text-align: center;   
+}
+
+main .main-content h1{
+    font-size: 3em;
+}
+
+main .main-content input{
+    background-color: var(--color-secondary);
+    border: none;
+    font-weight: 600;
+    color: var(--color-gray-dark);
+    padding: 1em;
+    font-size: 1em;
+    transition: all 300ms;
+}
+
+main .main-content input:hover{
+    opacity: .8;
+    cursor: pointer;
+}
