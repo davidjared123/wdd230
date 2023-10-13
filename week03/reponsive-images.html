@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <title>Responsive Images</title>
+    <meta name="description" content="This is a practice for responsive images on HTML">
+    <meta author="David Pérez" content="Responsive images" />
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Images</h1>
+    </header>
+
+  <main>
+    <div class="hero">
+        <picture>
+            <source media="(min-width: 500px )" srcset="Images/hero-medium.webp">
+            <source media="(min-width: 1000px )" srcset="images/hero-large.jpg">
+            <img src="images/hero-small.webp" alt="Heroimage">
+        </picture>
+    </div>
+  </main>
+
+     <footer>
+        <p>
+            &copy <span id="year"></span> - </span>David Pérez - Venezuela
+        </p>
+    </footer>
+  </body>
+</html>
