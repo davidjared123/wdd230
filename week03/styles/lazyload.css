@@ -1,0 +1,26 @@
+body{
+    padding: 2em;
+    text-align: center;
+    background: #fbfaff;
+}
+main{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+main img{
+    align-self: center;
+    display: block;
+    animation: fade 2s ;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
