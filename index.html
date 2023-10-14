@@ -44,6 +44,18 @@
       <!-- Botón -->
       <label for="switch-label" class="switch-button__label"></label>
     </div>
+    <div class="hero">
+      <picture>
+        <source media="(min-width: 500px )" srcset="images/caracas_venezuela_temple-med.webp">
+            <source media="(min-width: 1000px )" srcset="images/caracas_venezuela_temple.webp">
+            <img src="images/caracas_venezuela_temple-small.webp" alt="Heroimage">
+      </picture>
+
+      <div class="hero-description">
+        <p>Caracas Venezuela Temple, in this place I married with my wife in 2019, currently we have two little boys, and we are a imperfect but happy family we love each other.</p>
+        <a href="#">Meet us</a>
+      </div>
+    </div>
     <main class="main-grid">
       <h2>WDD 230: Web Frontend Development</h2>
       <section class="card card-activities">
@@ -61,10 +73,15 @@
       <section class="card card-info">
         <h3>Information</h3>
         <ul>
-          <li><a href=""></a></li>
+          <li id="lastModified"><a href=""></a></li>
+          <li class="label">Visit Count: <span class="visits"></span></li>
         </ul>
       </section>
     </main>
+
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125548.91289209659!2d-66.96972224774129!3d10.468820862632763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5841fd26412d%3A0x66406e7f977fcba8!2sTemplo%20de%20Caracas%2C%20Venezuela!5e0!3m2!1ses!2sve!4v1697300159893!5m2!1ses!2sve" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
+    </section>
 
     <footer>
         <p>

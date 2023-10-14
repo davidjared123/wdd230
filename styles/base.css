@@ -80,9 +80,55 @@ nav ul li:hover{
     width: 100%;
 }
 
+.hero {
+    /* background-color: #001747; */
+    position: relative;
+}
+
+.hero picture{
+    width: 100%;
+    height: 100%;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.hero-description{
+    background: #0000004d;
+    padding: 1em 0; 
+    color: white;
+    position: absolute;
+    top:30%;
+    width: 100%;
+    text-align: center;
+    /* background-color: antiquewhite; */
+    display: grid;
+    justify-content: center;
+}
+
+.hero-description p{
+    max-width: 600px;
+    font-size: 1.2em;
+}
+
+.hero-description a{
+    justify-self: center;
+   padding: 1em;
+   margin-top: 0.5em;
+    background-color: #001747;
+    color: white;
+    text-decoration: none;
+
+}
+
+.hero-description a:hover{
+background-color: #1D4D72;
+transition: all 250ms;
+}
 main{
     padding: 2em;
-    /* background-color: antiquewhite; */
 }
 
 body.dark{
@@ -158,7 +204,12 @@ body.dark .card h3{
 body.dark .card ul a{
     color: rgba(255, 255, 255, 0.801);
 }
-
+.map{
+    padding: 0.5em;
+}
+.map iframe{
+    width: 100%;
+}
 
 footer{
    background-color: #1D4D72; 
@@ -197,6 +248,17 @@ header h1 {
     /* background: #000; */
     font-weight: 500;
     font-size: 1em;
+}
+
+.hero-description p{
+    max-width: 300px;
+    font-size: 0.8em;
+}
+
+.hero-description a{
+   padding: 0.5em;
+   margin-top: 0.5em;
+
 }
 
 .main-grid{
