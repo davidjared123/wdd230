@@ -284,3 +284,178 @@ footer{
    text-align: center;
    padding: 1em;
 }
+
+/* DISCOVER SECTION */
+.discover{
+    padding: 4em;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 450px 1fr 1fr;
+}
+
+.discover .discover-heading{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.discover .discover-heading .card{
+    border: solid var(--color-gray-dark) 2px;
+    padding: 1.5em;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-justify: distribute-all-lines;
+}
+.discover .discover-heading .card h3{
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+.discover .discover-heading .card img{
+    max-width: 100%;
+    margin-bottom: .5em;
+}
+
+.discover .discover-img picture{
+    max-height: 450px;
+    overflow: hidden;
+}
+
+.discover .discover-img{
+
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    /* background: #000; */
+    padding: 1em;
+    border: solid var(--color-gray-dark) 2px;
+    border-radius: 25px;
+    gap: 1em;
+}
+
+.discover .discover-img h2{
+    /* background-color: #7EE9EF; */
+    font-size: 3em;
+    grid-column: 1/3;
+}
+
+@media screen and (max-width: 1300px){
+     .discover .discover-img{
+    grid-template-columns: 1fr;
+}}
+
+@media screen and (max-width: 1200px){
+    .discover{
+    padding: 3em;
+    display: grid;
+    grid-gap: 1em;
+    /* background-color: #bdc1c5; */
+    grid-template-columns: 1fr;
+}
+.discover .discover-img{
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+.discover .discover-img picture img{
+    width: 100%;
+}
+.google-calendar iframe{
+    width: 100%;
+    height: 80vh;
+}
+}
+
+@media screen and (max-width: 900px)  {
+    header .navbar{
+        display: none;
+    }
+    .discover{
+    padding: 1em;
+}
+   .google-calendar iframe{
+    width: 100%;
+    height: 50vh;
+}
+    .search {
+        display: none;
+    }
+
+    header svg{
+        fill: var(--color-gray-dark);
+        margin-right: 1em;
+    }
+    .colors-schema .pic_color div{
+    height: 6em;
+    width: 6em;
+}
+.colors-schema .pic_color{
+    gap: 1em;
+}
+
+.colors-schema .pic_color div p{
+    font-size: 0.8em;
+}
+}
+
+@media screen and (max-width: 600px){
+
+    .google-calendar iframe{
+    width: 100%;
+    height: 40vh;
+}
+  main .main-content h1{
+    font-size: 1.5em;
+}
+main .main-content{
+    max-width:80vw;
+}
+
+.chamber_logo{
+    height: 3em;
+    padding: 0;
+}
+    .showing_font h4{
+    font-size: 3em;
+}
+.colors-schema .pic_color{
+    gap: 0.5em;
+}
+
+.showing_font p{
+    font-size: 1em;
+}
+.colors-schema .pic_color div{
+    height: 5em;
+    width: 5em;
+}
+
+.colors-schema .pic_color div p{
+    font-size: 0.3em;
+}
+
+
+}
+
+@media screen and (max-width: 500px){
+    /* .font_section .description{
+        max-width: 600px;
+    } */
+.google-calendar iframe{
+    width: 100%;
+    height: 40vh;
+}
+ .colors-schema .pic_color{
+    gap: 0.3em;
+}
+
+.colors-schema .pic_color div{
+    height: 4em;
+    width: 4em;
+}
+
+.colors-schema .pic_color div p{
+    font-size: 0.3em;
+}
+}
