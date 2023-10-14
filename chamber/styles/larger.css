@@ -112,6 +112,10 @@ header{
     align-items: center;
 }
 
+ header svg{
+       display: none;
+    }
+
 .navbar{
     margin-right: 2em;
     display: flex;
@@ -383,6 +387,7 @@ footer{
     }
 
     header svg{
+        display: block;
         fill: var(--color-gray-dark);
         margin-right: 1em;
     }
