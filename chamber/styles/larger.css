@@ -20,6 +20,26 @@ nav{
     background-color: var(--color-primary);
     padding: 1em;
 }
+
+.lastModified{
+    font-weight: 700;
+    color: var(--color-gray-dark);
+    background-color: var(--color-secondary);
+}
+
+.close{
+    margin-left: .5em;
+    opacity: .8;
+}
+.close:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.dalate{
+    display: none;
+}
+
 nav ul{
     display: flex;
     /* background-color: aqua; */
@@ -364,6 +384,7 @@ footer{
 }
 .discover .discover-img picture img{
     width: 100%;
+    transition: all 300ms;
 }
 .google-calendar iframe{
     width: 100%;
@@ -463,4 +484,15 @@ main .main-content{
 .colors-schema .pic_color div p{
     font-size: 0.3em;
 }
+}
+
+@media screen and (min-width: 1000px){
+.discover .discover-img picture img:hover{
+    cursor: pointer;
+    transform: scaleX(-1);
+    opacity: .8;
+    animation: skew;
+    transition: all 800ms;
+}
+
 }
