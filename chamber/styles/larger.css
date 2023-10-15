@@ -491,7 +491,6 @@ main .main-content{
     cursor: pointer;
     transform: scaleX(-1);
     opacity: .8;
-    animation: skew;
     transition: all 800ms;
 }
 
